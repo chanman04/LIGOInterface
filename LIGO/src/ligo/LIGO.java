@@ -55,6 +55,7 @@ public class LIGO extends JPanel{
 
                 f.setContentPane(imagePanel);
                 f.pack();
+                f.setExtendedState(JFrame.MAXIMIZED_BOTH);
                 f.setBounds(0,0,1800, 1000);
                 f.setVisible(true);
                 
