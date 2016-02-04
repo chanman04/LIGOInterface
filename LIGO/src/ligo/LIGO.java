@@ -16,6 +16,7 @@ import java.awt.event.ActionListener;
 import java.awt.geom.*;
 import javax.swing.JComponent;
 import javax.swing.JDialog;
+import javax.swing.SwingUtilities;
 import javax.swing.Timer;
 import javax.swing.border.EmptyBorder;
 /**
@@ -57,7 +58,18 @@ public class LIGO extends JPanel{
                 f.setBounds(0,0,1800, 1000);
                 f.setVisible(true);
                 
-                
+                button.addActionListener(new ActionListener(){
+                    @Override
+                    public void actionPerformed(ActionEvent e){
+                        //dispose();
+                        SwingUtilities.invokeLater(new Runnable() {
+                            public void run() {
+                                f.setVisible(false);
+                                new Main_Menu().setVisible(true);
+                            }
+                        });
+                    }
+                });
             }
         });
     }
