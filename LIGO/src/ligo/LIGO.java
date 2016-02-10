@@ -65,7 +65,7 @@ public class LIGO extends JPanel{
                         //dispose();
                         SwingUtilities.invokeLater(new Runnable() {
                             public void run() {
-                                f.setVisible(false);
+                                f.dispose();
                                 new Main_Menu().setVisible(true);
                             }
                         });

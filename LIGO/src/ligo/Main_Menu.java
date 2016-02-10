@@ -119,19 +119,25 @@ public class Main_Menu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        jPanel1.setBackground(Color.RED);
+        //jPanel1.setBackground(Color.RED);
+        new Main_Menu().dispose();
+        new Panel1().setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        jPanel1.setBackground(Color.BLUE);
+        // jPanel1.setBackground(Color.BLUE);
+        new Main_Menu().dispose();
+        new Panel2().setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        jPanel1.setBackground(Color.GREEN);
+        new Main_Menu().dispose();
+        new Panel3().setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        jPanel1.setBackground(Color.YELLOW);
+        new Main_Menu().dispose();
+        new Panel4().setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     public static void main(String args[]) {
