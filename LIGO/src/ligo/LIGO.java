@@ -21,8 +21,9 @@ import javax.swing.Timer;
 import javax.swing.border.EmptyBorder;
 /**
  *
- * @author Kyle
+ * @author Danny Truong, Kyle Martinez, Michael Chan
  */
+
 public class LIGO extends JPanel{
     
     private final Image image;
@@ -74,4 +75,6 @@ public class LIGO extends JPanel{
             }
         });
     }
+
+
 }
